@@ -3,7 +3,6 @@
 *{
     padding: 0;
     margin: 0;
-    background: black;
     color: white;
     font-family: sans-serif;
 }
@@ -11,10 +10,56 @@
 html, body{
     width: 100%;
     height: 100%;
+    background: #0a0a0b;
+}
+
+.contain{
+    padding: 0 2em;
+}
+
+.name-link{
+    text-decoration: none;
+    font-size: 1.3em;
+    font-family: 'Prata', serif;
+}
+
+.btn{
+    background-color: #fbe850;
+    color: black;
+    font-size: 1.5em;
+    padding: 1em 1.8em ;
+    border-radius: 5px;
+    border: none;
+}
+
+.btn-nav{
+    padding: .4em 1em;
+    font-size: 1.3em;
+    float: right;
+    margin: 0;
+}
+
+h2{
+    font-size: 2.2em;
+    margin: 0.5em 0;
+    font-family: 'Prata', serif;
+}
+
+p{
+    font-size: 1.4em;
+    color: #ccc;
+    line-height: 1.5em;
+    font-family: 'Inter', sans-serif;
+}
+
+.icon{
+    color: white;
+    font-size: 2em;
+    
 }
 
 .header-nav{
-    margin: 1.5em 1em;
+    margin: 1em;
 }
 
 .header-nav ul{
@@ -22,6 +67,9 @@ html, body{
     display: flex;
     flex-direction: column;
     margin-top: 0.5em;
+    clear: right;
+    background-color: #2e3038;
+    margin-top: 1.3em;
 }
 
 .header-nav ul li{
@@ -29,10 +77,70 @@ html, body{
     text-align: center;
 }
 
+.header-nav ul li:hover{
+    background-color: #444752;
+}
+
 .header-nav ul li a{  
-    padding: 1em;
+    padding: 1em 0;
     display: block;
     width: 100%;
     text-decoration: none;
     text-transform: uppercase;
+}
+
+.header-text h1{
+    font-size: 3em;
+    margin-bottom: 0.3em;
+    font-family: 'Prata', serif;
+}
+
+
+
+.header-logos{
+    height: 20em;
+    margin-top: 3em;
+    margin-bottom: 3em;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows:repeat(3, 1fr);
+    row-gap: 1em;
+}
+
+
+.cards-text{
+    margin-top: 3em;
+    margin-bottom: 4em;
+}
+
+.main-text{
+    background-color: #2e3038;
+}
+
+.communities{
+    padding: 4em 0;
+}
+
+.communities h2{
+    margin-bottom: 1em;
+}
+
+.communities p{
+    margin: 2em 0;
+}
+
+.communities p:nth-child(3){
+    margin-bottom: 4em;
+}
+
+.contact{
+    margin: 5em 0;
+}
+.contact p{
+    margin-bottom: 0.8em;
+}
+
+.footer{
+    background-color: #2e3038;
+    padding: 2em;
 }
