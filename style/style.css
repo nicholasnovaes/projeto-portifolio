@@ -21,6 +21,7 @@ html, body{
     text-decoration: none;
     font-size: 1.3em;
     font-family: 'Prata', serif;
+    
 }
 
 .btn{
@@ -37,6 +38,10 @@ html, body{
     font-size: 1.3em;
     float: right;
     margin: 0;
+}
+
+.material-symbols-outlined{
+    clear: both;
 }
 
 h2{
@@ -59,7 +64,7 @@ p{
 }
 
 .header-nav{
-    margin: 1em;
+    margin-top: 1em;
 }
 
 .header-nav ul{
@@ -89,6 +94,16 @@ p{
     text-transform: uppercase;
 }
 
+#menu{
+    display: none;
+}
+
+.material-symbols-outlined{
+    text-align: center;
+    position: absolute;
+    left: 48%;
+}
+
 .header-text h1{
     font-size: 3em;
     margin-bottom: 0.3em;
@@ -105,6 +120,8 @@ p{
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows:repeat(3, 1fr);
     row-gap: 1em;
+    align-items: center;
+    justify-items: center;
 }
 
 
@@ -142,5 +159,34 @@ p{
 
 .footer{
     background-color: #2e3038;
-    padding: 2em;
+    padding: 4em;
+}
+
+
+
+@media screen and (min-width:768px) and (max-width:1023px) {
+    .contain{
+        padding: 0 3em; 
+    }
+    
+
+    .header-text{
+        margin-top: 3em;
+        text-align: center;
+    }
+
+    .header-logos{
+    
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows:repeat(2, 1fr);
+        row-gap: 1em;
+        align-items: center;
+        justify-items: center;
+    }
+
+    .cards-text img{
+        width: 100%;
+    }
+
+    
 }
