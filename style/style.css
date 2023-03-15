@@ -69,8 +69,6 @@ p{
 
 .header-nav ul{
     list-style-type: none;
-    display: flex;
-    flex-direction: column;
     margin-top: 0.5em;
     clear: right;
     background-color: #2e3038;
@@ -82,9 +80,6 @@ p{
     text-align: center;
 }
 
-.header-nav ul li:hover{
-    background-color: #444752;
-}
 
 .header-nav ul li a{  
     padding: 1em 0;
@@ -92,6 +87,10 @@ p{
     width: 100%;
     text-decoration: none;
     text-transform: uppercase;
+}
+
+.header-nav ul li:hover{
+    background-color: #444752;
 }
 
 #menu{
@@ -128,6 +127,10 @@ p{
 .cards-text{
     margin-top: 3em;
     margin-bottom: 4em;
+}
+
+.cards-text img{
+    width: 100%;
 }
 
 .main-text{
@@ -176,17 +179,28 @@ p{
     }
 
     .header-logos{
-    
         grid-template-columns: repeat(3, 1fr);
         grid-template-rows:repeat(2, 1fr);
         row-gap: 1em;
         align-items: center;
         justify-items: center;
     }
+}
 
-    .cards-text img{
-        width: 100%;
+@media screen and (min-width:1024px){
+    .contain{
+        padding: 0 8em;
     }
 
-    
+    .header-nav span{
+        display: none;
+    }
+
+    #menu{
+        display: flex;
+    }
+
+
+
+
 }
