@@ -19,7 +19,7 @@ html, body{
 
 .name-link{
     text-decoration: none;
-    font-size: 1.3em;
+    font-size: 1em;
     font-family: 'Prata', serif;
     
 }
@@ -40,8 +40,8 @@ html, body{
 }
 
 .btn-nav{
-    padding: .4em 1em;
-    font-size: 1.3em;
+    padding: .4em .8em;
+    font-size: 1em;
     float: right;
     margin: 0;
 }
